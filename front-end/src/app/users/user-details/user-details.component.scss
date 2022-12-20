@@ -1,0 +1,78 @@
+.card-profile {
+  margin-top: 30px;
+}
+
+.card-profile .card-avatar {
+  max-width: 130px;
+  max-height: 130px;
+  margin: -80px auto 0;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  width: 316px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  color: inherit;
+  background: inherit;
+}
+
+.card .card-image {
+  height: 60%;
+  position: relative;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -30px;
+  border-radius: 6px;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.card-avatar {
+  margin-top: 10px;
+  margin-bottom: -50px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+h3,
+h2 {
+  font-weight: 100;
+}
+
+.female {
+  border: #ff00cd 3px solid;
+}
+
+.male {
+  border: #0dfbff 3px solid;
+}
+
+.full-name {
+  text-align: center;
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Password Strong",
+  "subtitle": "Test your password strong.",
+  "password": "Password",
+  "generate_password": "Generate Password",
+  "password_message": {
+    "length": "Minimum six characters.",
+    "lower_case": "Two lowercase characters.",
+    "upper_case": "Two uppercase characters.",
+    "numeric": "Two numeric characters.",
+    "special": "Two special characters."
+  },
+  "male": "Male",
+  "female": "Female",
+  "search": "Search",
+  "all": "All",
+  "choose_state": "Choose a State",
+  "name": "Name",
+  "gender": "Gender",
+  "birth": "Birth",
+  "actions": "Actions",
+  "birthday": "Birthday",
+  "phone": "Phone",
+  "nat": "Nationality",
+  "address": "Address",
+  "number": "Number",
+  "city": "City",
+  "state": "State",
+  "country": "Country"
+}

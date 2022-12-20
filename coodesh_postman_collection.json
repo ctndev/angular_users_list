@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "48a7c197-7c74-44a7-8365-51527a7bb21a",
+		"name": "Ctnusers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4294588"
+	},
+	"item": [
+		{
+			"name": "All Users",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3005/users?sort=asc&s=Ber&gender=male",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "asc"
+						},
+						{
+							"key": "s",
+							"value": "Ber"
+						},
+						{
+							"key": "gender",
+							"value": "male"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "One User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3005/users/6373e33af209e4d5ca210621",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"users",
+						"6373e33af209e4d5ca210621"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"gender\": \"male\",\r\n  \"name\": {\r\n    \"title\": \"Mister\",\r\n    \"first\": \"Yuri\",\r\n    \"last\": \"Caetano\"\r\n  },\r\n  \"location\": {\r\n    \"street\": {\r\n      \"number\": 4291,\r\n      \"name\": \"Rua Santa Luzia \"\r\n    },\r\n    \"city\": \"Campo Largo\",\r\n    \"state\": \"Bahia\",\r\n    \"country\": \"Brazil\",\r\n    \"postcode\": 11280,\r\n    \"coordinates\": {\r\n      \"latitude\": \"-40.7384\",\r\n      \"longitude\": \"146.0172\"\r\n    },\r\n    \"timezone\": {\r\n      \"offset\": \"-5:00\",\r\n      \"description\": \"Eastern Time (US & Canada), Bogota, Lima\"\r\n    }\r\n  },\r\n  \"email\": \"ariovanda.aragao@example.com\",\r\n  \"login\": {\r\n    \"uuid\": \"b0d3e756-3c96-4c7c-97a0-bbdf4fc10568\",\r\n    \"username\": \"bluetiger236\",\r\n    \"password\": \"456456\",\r\n    \"salt\": \"xIm6fd1h\",\r\n    \"md5\": \"cb9a9fcb4e8ced83700551abdbf7e7c5\",\r\n    \"sha1\": \"a5864c30600b26d2bc5d9f603034ea42669d73da\",\r\n    \"sha256\": \"2b6761cdca64445c15d7b352ec30ba90eb75cca12db435cfb04f27be75b67bf9\"\r\n  },\r\n  \"dob\": {\r\n    \"date\": \"1951-01-02T15:29:29.688Z\",\r\n    \"age\": 69\r\n  },\r\n  \"registered\": {\r\n    \"date\": \"2005-05-24T13:07:22.372Z\",\r\n    \"age\": 15\r\n  },\r\n  \"phone\": \"(53) 1924-4957\",\r\n  \"cell\": \"(90) 6530-2213\",\r\n  \"id\": {\r\n    \"name\": \"\",\r\n    \"value\": null\r\n  },\r\n  \"picture\": {\r\n    \"large\": \"https://randomuser.me/api/portraits/women/26.jpg\",\r\n    \"medium\": \"https://randomuser.me/api/portraits/med/women/26.jpg\",\r\n    \"thumbnail\": \"https://randomuser.me/api/portraits/thumb/women/26.jpg\"\r\n  },\r\n  \"nat\": \"BR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"yuri.alexs@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/users/6371a683afe26dbeb067543f",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"users",
+						"6371a683afe26dbeb067543f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3005/users/637182e7be717b08578b97ea",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"users",
+						"637182e7be717b08578b97ea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FullStack Challenge",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3005",
+					"host": [
+						"localhost"
+					],
+					"port": "3005"
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "d5370c5c3367e73b30600210b571265a",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "apiKey",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

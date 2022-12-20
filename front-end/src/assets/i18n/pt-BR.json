@@ -1,0 +1,31 @@
+{
+  "title": "Força da Senha",
+  "subtitle": "Teste a força da sua senha.",
+  "password": "Senha",
+  "generate_password": "Gerar Senha",
+  "password_message": {
+    "length": "Mínimo seis caracteres.",
+    "lower_case": "Dois caracteres minúsculos.",
+    "upper_case": "Dois caracteres maiúsculos.",
+    "numeric": "Dois caracteres numéricos.",
+    "special": "Dois caracteres especiais."
+  },
+  "male": "Masculino",
+  "female": "Feminino",
+  "search": "Pesquisar",
+  "all": "Todos",
+  "choose_state": "Escolha um Estado",
+  "name": "Nome",
+  "gender": "Gênero",
+  "birth": "Aniversário",
+  "actions": "Ações",
+  "birthday": "Data de Nascimento",
+  "phone": "Telefone",
+  "nat": "Nacionalidade",
+  "address": "Endereço",
+  "number": "Número",
+  "city": "Cidade",
+  "state": "Estado",
+  "country": "País"
+}
+

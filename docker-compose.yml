@@ -1,0 +1,54 @@
+version: '3.1'
+
+services:
+
+    mongo:
+      build:
+        context: ./mongodb
+        dockerfile: Dockerfile
+      image: mongo:6.0.2
+      container_name: mongo-container
+      restart: always
+      volumes:
+        - ./mongodb:/var/lib/mongodb/data
+      ports:
+       - "27017:27017"
+      environment:
+        MONGO_INITDB_DATABASE: ctnusers
+      networks:
+        - ctn
+
+    angular:
+      depends_on: ['mongo']
+      image: angular
+      restart: always
+      container_name: angular-container
+      build:
+        context: ./front-end
+        dockerfile: Dockerfile
+      ports:
+        - "4205:80"
+      networks:
+        - ctn
+
+    nestjs:
+      depends_on: ['mongo']
+      image: nestjs
+      restart: always
+      container_name: nestjs-container
+      build:
+        context: ./back-end
+        dockerfile: Dockerfile
+      ports:
+        - "3005:3000"
+      environment:
+        DB_HOST: mongodb
+      networks:
+        - ctn
+
+
+networks:
+  ctn:
+    driver: bridge
+
+      

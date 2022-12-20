@@ -1,0 +1,42 @@
+table {
+  width: 100%;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.search-container {
+  width: 50%;
+}
+
+.search {
+  width: 100%;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.loading-more {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  justify-content: center;
+  margin: 20px 0;
+}

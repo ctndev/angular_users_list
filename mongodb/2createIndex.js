@@ -1,0 +1,1 @@
+db.users.createIndex({'name.first': 'text', 'name.last': 'text'})

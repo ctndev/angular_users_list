@@ -1,0 +1,43 @@
+<mat-card>
+  <div class="card card-profile">
+    <div class="card-avatar" [class]="data.gender">
+      <img class="img" [src]="data.picture.large">
+    </div>
+    <mat-card-content>
+
+      <div>
+        <h2 class="full-name">{{fullName()}}</h2>
+      </div>
+
+      <div class="line">
+        <ctn-label label="E-Mail" [dado]="data.email"></ctn-label>
+      </div>
+
+      <div class="line">
+        <ctn-label [label]="'gender' | translate" [dado]="data.gender"></ctn-label>
+        <ctn-label [label]="'birthday' | translate" [dado]="data.dob.date | date: 'dd/MM/yyyy'"></ctn-label>
+      </div>
+
+      <div class="line">
+        <ctn-label [label]="'phone' | translate" [dado]="data.phone"></ctn-label>
+        <ctn-label [label]="'nat' | translate" [dado]="data.nat"></ctn-label>
+      </div>
+
+      <hr>
+      <h3>Endereço</h3>
+      <div class="line">
+        <ctn-label [label]="'address' | translate" [dado]="data.location.street.name"></ctn-label>
+        <ctn-label [label]="'number' | translate" [dado]="data.location.street.number"></ctn-label>
+      </div>
+
+      <div class="line">
+        <ctn-label [label]="'city' | translate" [dado]="data.location.city"></ctn-label>
+        <ctn-label [label]="'state' | translate" [dado]="data.location.state"></ctn-label>
+        <ctn-label [label]="'country' | translate" [dado]="data.location.country"></ctn-label>
+      </div>
+
+      <ctn-label label="ID" [dado]="data._id"></ctn-label>
+
+    </mat-card-content>
+  </div>
+</mat-card>

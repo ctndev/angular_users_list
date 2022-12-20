@@ -1,0 +1,31 @@
+Executar comandos postgres pelo docker
+    docker exec -i postgres-container psql -Upostgres
+
+Listar os containers iniciados
+    docker ps
+
+Rodar o container
+    docker run -d --rm --name postgres-container postgres-image
+
+Fazer o build do container
+    docker build -t postgres-image -f .\docker\postgres\Dockerfile . 
+
+Parar o container
+    docker stop postgres-container
+
+
+Rodar o container com volume
+    docker run -d -e PGDATA=/var/lib/postgresql/data/pgdata -v ${pwd}\docker\postgres\db:/var/lib/postgresql/data --rm --name postgres-container postgres-image
+
+Rodar comando para criar o banco
+    docker exec -i postgres-container psql -Upostgres -f /var/lib/postgres/script.sql
+
+Entrar no terminal do container
+    docker exec -it postgres-container /bin/bash
+
+
+
+    docker run -d -e PGDATA=/var/lib/postgresql/data/pgdata -v ${pwd}\docker\postgres\db:/var/lib/postgresql/data --rm --name postgres-container postgres-image
+
+
+mongoimport --db ctnusers --collection users --file users.json --jsonArray
