@@ -2,11 +2,11 @@ FROM node:alpine as nestjs
 
 
 WORKDIR /app
-COPY package*.json /app
+COPY package*.json /app/
 RUN npm install --silent
 COPY . .
-COPY config .
-COPY config/* .
+COPY config ./
+COPY config/* ./
 RUN npm run build
 
 EXPOSE 3005
